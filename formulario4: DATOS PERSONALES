@@ -1,0 +1,5 @@
+Formulario donde el usuario podra ingresar informacion personal solicitada, en este formulario solo codificamos el boton de regreso:
+    private void button1_Click(object sender, EventArgs e)
+    {
+        this.Close();
+}
