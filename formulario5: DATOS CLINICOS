@@ -1,0 +1,6 @@
+en este formulario se toman los datos clinicos del usuario, aqui solo codificamos el boton de regreso:
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
