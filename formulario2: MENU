@@ -1,0 +1,37 @@
+contiene los enlaces para acceder a los otros formularios:
+ private void saliToolStripMenuItem_Click(object sender, EventArgs e)
+ {
+     Formularios.Datos_Clinicos VentanaDatosClin = new Formularios.Datos_Clinicos();
+     this.Hide();
+     VentanaDatosClin.ShowDialog();
+     this.Show();
+ }
+
+ private void saludarToolStripMenuItem_Click(object sender, EventArgs e)
+ {
+     Formularios.Saludar VentanaSaludar= new Formularios.Saludar();
+     this.Hide();
+     VentanaSaludar.ShowDialog();
+     this.Show();
+ }
+
+ private void datosPersonalesToolStripMenuItem_Click(object sender, EventArgs e)
+ {
+     Formularios.DatosPersonales VentanaDatosPers = new Formularios.DatosPersonales();
+     this.Hide();
+     VentanaDatosPers.ShowDialog();
+     this.Show();
+ }
+
+ private void operacionesToolStripMenuItem_Click(object sender, EventArgs e)
+ {
+     Formularios.Operaciones VentanaOperaciones = new Formularios.Operaciones();
+     this.Hide();
+     VentanaOperaciones.ShowDialog();
+     this.Show();
+ }
+
+ private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+ {
+     this.Close();
+ }
