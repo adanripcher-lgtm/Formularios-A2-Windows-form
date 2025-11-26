@@ -1,0 +1,40 @@
+formulario que pide ingresar tu nombre para mostrar una mensaje:
+CODIGO EN EL FORMULARIO, PROGRMANDO EL BOTON
+        public Saludar()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            Clases.Ventana1S ventana1 = new Clases.Ventana1S();
+            string elsaludo = ventana1.mensaje (nombreasaludar.Text);
+            MessageBox.Show(elsaludo);
+
+        }
+
+        private void regresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+CODIGO DE LA CLASE CREADA PARA ESTE FORMULARIO:
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace A2_INTERFACESS.Clases
+{
+    public class Ventana1S
+    {
+      public string mensaje (string nombre)
+        {
+            string saludo;
+            saludo = "  HOLA " + nombre + "\n  QUE TENGAS BUEN DIA =) ";
+            return saludo;
+
+        }
+    }
+}
