@@ -1,0 +1,24 @@
+FORMULARIO 1, ingreso al programa por medio de una contraseña:
+private void button1_Click(object sender, EventArgs e)
+{
+    if (contratxt.Text == "")
+    {
+        MessageBox.Show("Debe ingresar contraseña ");
+    }
+    else if (contratxt.Text == "123456")
+    {
+        Menu FormPrin=new Menu();
+        this.Hide();
+        FormPrin.ShowDialog();
+        this.Show();
+        contratxt.Clear();
+
+
+    }
+    else 
+    {
+        MessageBox.Show("Contraseña incorrecta.");
+        contratxt.Clear();
+    }
+        
+}
